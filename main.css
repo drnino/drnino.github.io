@@ -355,7 +355,7 @@ img {
 
 .footer .footer-cols {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 	grid-gap: 2rem;
 }
 
@@ -515,7 +515,7 @@ img {
 	}
 
 	.footer .footer-cols {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	.btn-xl {
@@ -661,3 +661,28 @@ img {
     -webkit-box-reflect: below 0px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(60%, transparent), to(rgba(255, 255, 255, 0.3)));
 }
 /*------------- FIN DE REFLEXION ------------*/
+
+
+/*------- icono social --------*/
+.footer .social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.footer .social-icons a:last-child {
+  margin-right: 0;
+}
+
+.footer .social-icons a:hover {
+  background-color: var(--rolex);
+}
+/*------ FIN DE ICONO SOCIAL-------*/
+
