@@ -489,10 +489,17 @@ img {
 	margin-left: 1rem;
 }
 
+/*--------------MEDIA-----------------*/
+
 @media (max-width: 960px) {
 
-		.showcase {
+	.showcase {
 		height: 70vh;
+	}
+	
+	.showcase::after {
+		background: rgba(0, 0, 0, 0.6);
+		box-shadow: inset 80px 80px 150px #000000, inset -80px -80px 150px #000000;
 	}
 
 	.hide-sm {
@@ -500,9 +507,12 @@ img {
 	}
 
 	.showcase-top img {
-		top: 30%;
-		left: 5%;
-		transform: translate(0);
+		width: 400px;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin-left: 0;
 	}
 
 	.showcase-content h1 {
@@ -511,7 +521,7 @@ img {
 	}
 
 	.showcase-content p {
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 
 	.footer .footer-cols {
