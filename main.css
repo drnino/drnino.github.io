@@ -411,6 +411,9 @@ img {
 	color: #999;
 }
 
+.text-ts{
+	font-weight: 700;
+}
 /* Buttons */
 .btn {
 	display: inline-block;
@@ -602,6 +605,10 @@ img {
 		padding: 1.2rem 1.6rem;
 		text-transform: uppercase;
 	}
+	
+	.btn-rounded{
+	margin-right: 0rem;
+	}
 }
 
 @media(max-height: 600px)
@@ -637,7 +644,7 @@ img {
 	color: var(--rolex);
 }
 
-/*Agrea el signo dal final*/
+/*Agrea el signo al final*/
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
@@ -710,4 +717,67 @@ img {
   background-color: var(--rolex);
 }
 /*------ FIN DE ICONO SOCIAL-------*/
+
+/*----------- Seccion 5 ---------------*/
+#slider{
+overflow: hidden;
+width: 90%;
+position: relative;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+/*display: flex;
+flex-direction: column;*/
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-left: 4rem;
+}
+
+#slider figure{
+position: relative;
+width: 1000%;
+margin: 0;
+left: 0;
+animation: 30s slider infinite;
+}
+
+#slider figure img{
+width: 10%;
+height: 400px;
+max-width: 100%;
+float: left;
+}
+
+#slider .ss5{
+	position: relative;
+	padding-left: 4rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* crea 2 columnas iguales (1fr)*/
+	grid-gap: 2rem;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes slider{
+   0% {left: 0;}
+   5.2% {left: 0;}
+   10.4% {left: -100%;}
+   15.6% {left: -100%;}
+   20.8% {left: -200%;}
+   26% {left: -200%;}
+   31.2% {left: -300%;}
+   36.4% {left: -300%;}
+   41.6% {left: -400%;}
+   46.8% {left: -400%;}
+   52% {left: -500%;}
+   57.2% {left: -500%;}
+   62.4% {left: -600%;}
+   67.6% {left: -600%;}
+   72.8% {left: -700%;}
+   78% {left: -700%;}
+   85% {left: -800%;}
+   90% {left: -800%;}
+   100% {left: -900%;}
+}
 
