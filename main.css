@@ -109,8 +109,8 @@ img {
 	z-index: 1;
 	/* original en verde-> background: rgba(45, 92, 68, 0.5); /*-- agrega transparencia a la capa superficial --*/
 	background: rgba(0, 0, 0, 0.5); /*-- crea una capa negra con opacidad de 0.6*/
-	box-shadow: inset 5px 5px 5px #F0FFF0, inset -10px -5px 5px #F0FFF0;
-	/* original-> box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; --*/
+	/* original en verde->box-shadow: inset 5px 5px 5px #F0FFF0, inset -10px -5px 5px #F0FFF0;--*/
+	box-shadow: inset 80px 80px 150px #000000, inset -80px -80px 150px #000000; 
 }
 
 .showcase-top {
