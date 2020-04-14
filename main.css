@@ -107,8 +107,8 @@ img {
 	width: 100%;
 	height: 100%;
 	z-index: 1;
-	background: rgba(45, 92, 68, 0.5); /*-- agrega transparencia a la capa superficial --*/
-	/* original-> background: rgba(0, 0, 0, 0.6); /*-- crea una capa negra con opacidad de 0.6*/
+	/* original en verde-> background: rgba(45, 92, 68, 0.5); /*-- agrega transparencia a la capa superficial --*/
+	background: rgba(0, 0, 0, 0.5); /*-- crea una capa negra con opacidad de 0.6*/
 	box-shadow: inset 5px 5px 5px #F0FFF0, inset -10px -5px 5px #F0FFF0;
 	/* original-> box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; --*/
 }
