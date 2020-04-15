@@ -411,6 +411,10 @@ img {
 	color: #999;
 }
 
+.tx-2{
+	 font-size: 1.75em;
+}
+
 .text-ts{
 	font-weight: 700;
 }
@@ -511,6 +515,18 @@ img {
 		background: rgba(0, 0, 0, 0.6);
 		box-shadow: inset 80px 80px 150px #000000, inset -80px -80px 150px #000000;
 	}
+	
+		#slider {
+		margin-left: -3rem;
+	}
+
+	#slider .ss5 {
+		padding-left: -3rem;
+		position: relative;
+		grid-template-columns: repeat(1, 1fr);
+		align-items: left;
+		margin-left: 0;
+	}
 
 	.hide-sm {
 		display: none;
@@ -560,6 +576,10 @@ img {
 	.text-md {
 		margin-bottom: 1rem;
 		font-size: 1.2rem;
+	}
+	
+	.tx-2{
+		 font-size: 0.75em;
 	}
 }
 
@@ -781,3 +801,32 @@ float: left;
    100% {left: -900%;}
 }
 
+/*--------seccion 7-----------*/
+.button {
+  background-color: white;
+  border: none;
+  width: auto;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 52px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  display: block;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color:  white;
+  color: #006039;
+  border: 2px solid #006039;
+}
+
+.button1:hover {
+  background-color: #006039;
+  color: white;
+}
