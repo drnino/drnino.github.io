@@ -830,3 +830,122 @@ float: left;
   background-color: #006039;
   color: white;
 }
+
+/*------ Forma de contacto -----------*/
+form {
+	transition: all 4s ease-in-out;
+}
+
+.contact-title{
+	height: 50px;
+	margin-top: 40px;
+}
+
+.form-control {
+	width: 700px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid gray;
+	color: var(--primary-color);
+	margin-bottom: 16px;
+	font-size: 22px;
+	background-color: #F0FFF0;
+}
+
+.box-1{
+	background-color: #fff;
+	background: #fff;
+	border-top: 2px solid gray;
+	border-left: 2px solid gray;
+	border-right: 2px solid gray;
+}
+
+imput {
+		height: 45px;
+}
+
+form .submit{
+	background: var(--rolex);
+	color: white;
+	border-color: transparent;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+}
+
+form .submit:hover{
+	cursor: pointer;
+	opacity: 0.9;
+	background-color: #F0FFF0;
+	color: #006039;
+	border: 2px solid #006039;
+	border-radius: 2px;
+}
+
+/*---------Box de precios------------*/
+* {
+  box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columnsX {
+  float: left;
+  width: 50%;
+  padding: 8px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columnsX {
+    width: 100%;
+  }
+}
