@@ -20,7 +20,7 @@
     <header class="showcase">
 			<div class="showcase-top">
 				<img src="/assets/logo-white.png" alt="logo"/>
-				<a href="#" class="btn btn-rounded">Hacer una Cita</a>
+				<a href="https://wa.me/50767041694" class="btn btn-rounded">Hacer una Cita</a>
 			</div>
 			<div class="showcase-content">
         <!--    IMAGENES DE UNIVERSIDAD
@@ -43,7 +43,7 @@
             <a href="https://dominguezmd.glitch.me/ " target="_blank" class="btn sm">Hoja de Vida</a>
           </label>
         <label class="btn btn-secondary">
-          <a href="https://dominguezmd.glitch.me/ " target="_blank" class="btn sm"> Contactanos </a>
+          <a href="https://wa.me/50767041694" target="_blank" class="btn sm"> Contactanos </a>
         </label>
        <!-- <label class="btn btn-secondary">
          <a href="#" class="btn sm"> Contactanos</a>
@@ -315,94 +315,88 @@
           </div>
 				</div>
 
-				<!-- Tab Content 3 -->
+		<!-- Tab Content 3 -->
 				<div id="tab-3-content" class="tab-content-item">
 					<div class="text-center">
 						<p class="text-lg">
-							Si deseas cotizar el precio de una cirugia llama o escribenos.
+						  Si deseas cotizar el precio de una cirugia llama o escribenos:
 						</p>
-						<a href="#" class="btn btn-lg">Contactar: Precio de Cirugia</a>
+						<a href="#" class="btn btn-lg">(+507)6704-1694</a>
 					</div>
 
           <!-------------------------------------------->
-
-          <table class="table">
-						<thead>
-							<tr>
-								<th></th>
-								<th>Paciente Conocido</th>
-								<th>Primera Consulta</th>
-								<th>Consulta Urgente</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Precio de la consulta/evaluacion</td>
-								<td>$45.00</td>
-								<td>$50.00</td>
-								<td>$80.00</td>
-							</tr>
-							<tr>
-								<td>HD Available</td>
-								<td><i class="fas fa-times"></i></td>
-								<td><i class="fas fa-check"></i></td>
-								<td><i class="fas fa-check"></i></td>
-							</tr>
-							<tr>
-								<td>Ultra HD Available</td>
-								<td><i class="fas fa-times"></i></td>
-								<td><i class="fas fa-times"></i></td>
-								<td><i class="fas fa-check"></i></td>
-							</tr>
-							<tr>
-								<td>Duracion de la cita (en minutos)</td>
-								<td>30</td>
-								<td>45</td>
-								<td>45</td>
-							</tr>
-							<tr>
-								<td>Watch on your laptop, TV, phone and tablet</td>
-								<td><i class="fas fa-check"></i></td>
-								<td><i class="fas fa-check"></i></td>
-								<td><i class="fas fa-check"></i></td>
-							</tr>
-							<tr>
-								<td>Unlimited movies and TV shows</td>
-								<td><i class="fas fa-check"></i></td>
-								<td><i class="fas fa-check"></i></td>
-								<td><i class="fas fa-check"></i></td>
-							</tr>
-							<tr>
-								<td>Cancel anytime</td>
-								<td><i class="fas fa-check"></i></td>
-								<td><i class="fas fa-check"></i></td>
-								<td><i class="fas fa-check"></i></td>
-							</tr>
-							<tr>
-								<td>First month free</td>
-								<td><i class="fas fa-check"></i></td>
-								<td><i class="fas fa-check"></i></td>
-								<td><i class="fas fa-check"></i></td>
-							</tr>
-              <tr>
-								<td>selecciona el tipo de cita (has click en el icono)</td>
-								<td><i class="fas fa-address-book"></i></td>
-								<td><i class="fas fa-address-book"></i></td>
-								<td><i class="fas fa-first-aid"></i></td>
-							</tr>
-						</tbody>
-					</table>
-          <br>
-          <br>
-
-          <!-------------------------------------------->
-
-          <div class="text-center">
-            <p class="text-lg">
-              Elige el tipo de consulta que deseas y comunicate con nosotros.
-            </p>
-            <a class="btn btn-lg">Hacer una cita: (+507) 6704-1694 </a>
+	  <!-------------------------------------------->
+          <!-- div en blanco -->
+          <div id="tab-3-content" class="tab-content-item">
+            <div>
+              <br>
+              <br>
+            </div>
           </div>
+          <!-- fin de div blanco -->
+
+          <!-- inicio de forma de contacto -->
+        <div class="contact-title">
+          <p class="text-lg text-ts">O contactanos por correo electronico (email): </p>
+        </div>
+        <div class="contact-form">
+          <form id="contact-form" method="post" action="contact-form-handler.php">
+            <input name="name" type="text" class="form-control" placeholder="tu nombre completo" required>
+            <br>
+            <input name="email" type="email" class="form-control" placeholder="tu correo electronico" required>
+            <br>
+            <input name="dx" type="text" class="form-control" placeholder="tu diagnostico si lo tienes">
+            <br>
+            <input name="cx" type="text" class="form-control" placeholder="nombre de la cirugia si lo conoces">
+            <br>
+            <p>Si NO conoces tu diagnostico o el nombre de la cirugia escribe tu consulta aqui: </p>
+            <textarea name="message" class="form-control box-1" placeholder="" rows="10"></textarea>
+            <br>
+            <input type="submit" class="form-control submit" value="SEND MESSAGE">
+          </form>
+        </div>
+          <br>
+          <br>
+          <!-- FIN de forma de contacto -->
+          <!-------------------------------------------->
+          <!-- inicio del box de precios -->
+          <div class="text-center">
+            <p class="text-lg text-ts">
+              Tipos de Consultas <br> Basica (Cita para evaluacion en consultorio) o Urgente.
+            </p>
+            <!-- html snippet -->
+            <div class="columnsX">
+              <ul class="price">
+                <li class="header" style="background-color:#4CAF50">Basica</li>
+                <li class="grey">$ 50</li>
+                <li>10GB Storage</li>
+                <li>10 Emails</li>
+                <li>10 Domains</li>
+                <li>1GB Bandwidth</li>
+                <li class="grey"><a href="#" class="button">Hacer Cita</a></li>
+              </ul>
+            </div>
+            <div class="columnsX">
+              <ul class="price">
+                <!--<li class="header" style="background-color:#4CAF50">URGENTE</li>-->
+                <li class="header" style="background-color:#FF0000">URGENTE</li>
+                <li class="grey">$ 80</li>
+                <li>25GB Storage</li>
+                <li>25 Emails</li>
+                <li>25 Domains</li>
+                <li>2GB Bandwidth</li>
+                <li class="grey"><a href="#" class="button" style="background-color:#FF0000">Contactar</a></li>
+              </ul>
+            </div>
+            <!-- fin html snippet-->
+            <div>
+              <br>
+              <br>
+            </div>
+            <a class="btn btn-lg">Para hacer una cita llama o escribe al: (+507) 6704-1694 </a>
+          </div>
+        <!-- fin del box de precios -->
+        <!-------------------------------------------->
         <!-------------------------------------------->
 				</div>
 			</div>
