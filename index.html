@@ -5,14 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+	  
     <script src="https://kit.fontawesome.com/83b798641d.js" crossorigin="anonymous"></script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="/main.css" />
-    <!-- Latest compiled and minified Bootstrap CSS -->
+    <!-- Latest compiled and minified Bootstrap CSS -->	  
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    
     <title>Dr. Saturnino Dominguez C.</title>
+	  
     <!-- this is the code that will allow the icon to be visible in the title bar of the browser -->
     <link rel="icon" type="image/ico" href="../assets/icon1.png" />
+	  
+    <!-- Estilo de comentarios de pacientes -->
+    <style> /*---------- Comentario de pacientes---*/
+      		* {box-sizing: border-box}
+      		body {font-family: Verdana, sans-serif; margin:0}
+
+      		/* Slideshow container */
+      		.slideshow-container {
+        	position: relative;
+        	background: white; /*#f1f1f1f1;*/
+        	}
+
+        	/* Slides */
+        	.mySlides {
+          	display: none;
+          	padding: 80px;
+          	text-align: center;
+        	}
+
+        	/* Next & previous buttons */
+        	.prev, .next {
+          	cursor: pointer;
+          	position: absolute;
+          	top: 50%;
+          	width: auto;
+          	margin-top: -30px;
+          	padding: 16px;
+          	color: black;
+          	font-weight: bold;
+          	font-size: 20px;
+          	border-radius: 0 3px 3px 0;
+          	user-select: none;
+        	}
+
+        	/* Position the "next button" to the right */
+        	.next {
+          	position: absolute;
+          	right: 0;
+          	border-radius: 3px 0 0 3px;
+        	}
+
+        	/* On hover, add a black background color with a little bit see-through */
+        	.prev:hover, .next:hover {
+          	background-color: var(--rolex);
+          	color: white;
+        	}
+
+        	/* The dot/bullet/indicator container */
+        	.dot-container {
+            	text-align: center;
+            	padding: 20px;
+            	background: var(--rolex);
+        	}
+
+        	/* The dots/bullets/indicators */
+        	.dot {
+         	 cursor: pointer;
+         	 height: 15px;
+         	 width: 15px;
+         	 margin: 0 2px;
+         	 background-color: #bbb;
+          	border-radius: 50%;
+          	display: inline-block;
+          	transition: background-color 0.6s ease;
+        	}
+
+        	/* Add a background color to the active dot/circle */
+        	.active, .dot:hover {
+         	 background-color: #717171;
+        	}
+
+        	/* Add an italic font style to all quotes */
+        	q {font-style: italic;}
+
+        	/* Add a blue color to the author */
+        	.author {color: var(--rolex);}
+     </style>
   </head>
 
   <body>
@@ -134,6 +214,101 @@
             </div>
             <img src="/assets/imgA1.jpg" class="reflect" alt="">
           </div>
+	<!-- FIN de seccion de newsletters -->
+	<!-------------------------------------------->
+	 <!-- div en blanco -->
+	<div id="access" class="tab-1-content-inner ss-2"> 
+           <div>
+           </div>
+         </div> <!-- fin del div en blanco -->
+	<!-- inicio de seccion de informacion para pacientes -->
+	<div id="access" class="tab-1-content-inner ss-2">
+              <img src="/Users/admin/FrontendProjects/Netflix_clone/assets/imgA.jpg " class="reflect" alt="">
+              <div>
+              <p class="text-lg text-ts">Informacion para pacientes:<p>
+              <p class="text-md">Descarga manuales y videos sobre cuidados de tu enfermedad, consejos y cuidados postoperatorios<p>
+              <a href="#" class="btn btn-lg">Ver mas>></a>
+              </div>
+          </div>
+          <!-- FIN de seccion de informacion de pacientes-->
+	 <!-- div en blanco -->
+	 <div id="access" class="tab-1-content-inner ss-2"> 
+           <div>
+           </div>
+         </div> <!-- fin del div en blanco -->
+	 <!-------------------------------------------->
+          <!-- Inicio de seccion de Slideshow container -->
+          <section>
+          <p id="access" class="ss-4 text-lg text-ts text-center"> Deseas saber Que Opinan Nuestros Pacientes? </p>
+          <div class="slideshow-container">
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+              <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+              <p class="author">- John Keats</p>
+            </div>
+
+            <div class="mySlides">
+              <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+              <p class="author">- Ernest Hemingway</p>
+            </div>
+
+            <div class="mySlides">
+              <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+              <p class="author">- Thomas A. Edison</p>
+            </div>
+
+            <div class="mySlides">
+              <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+              <p class="author">- Holi holiz</p>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <!-- Dots/bullets/indicators -->
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+            }
+          </script>
+        </section>
+        <div id="access" class="ss-4">
+          <p class="text-lg text-ts text-center"></p>
+        </div>
+         <!-- FIN de comentarios de pacientes --------------------------->			
+					
+	  <!-- inicio de div en blanco -->
           <div id="access" class="tab-1-content-inner ss-2"> <!-- div en blanco -->
             <div>
             </div>
