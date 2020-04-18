@@ -962,3 +962,10 @@ form .submit:hover{
     margin-top: 0;
    }
 }
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
