@@ -118,6 +118,35 @@
           100%  { background-color: #ccc; }
         }
       </style>
+            <!-- Slider central -->
+      <style>
+          .slider {
+          	width: auto;
+          	margin: 2em auto;
+            max-width: 100vw;
+
+          }
+
+          .slider-wrapper {
+          	width: 100%;
+          	height: 400px;
+          	position: relative;
+          }
+
+          .slide {
+          	float: left;
+          	position: absolute;
+          	width: 100%;
+          	height: 100%;
+          	opacity: 0;
+          	transition: opacity 0.5s linear;
+          }
+
+          .slider-wrapper > .slide:first-child {
+          	opacity: 1;
+          }
+      </style>
+      <!-- 1111111 -->
   </head>
 
   <body>
@@ -244,10 +273,83 @@
               <a href="https://dominguezmd.glitch.me/ " class="btn btn-lg">Anestesiologa</a>
               </div>
           </div>
-          <div id="access" class="tab-1-content-inner ss-2"> <!-- div en blanco -->
+	  <!---------------------------------------------------------------------------------------->
+	   <!-- 000000000000 -->
+          <section>
+          <!-- div en blanco -->
+          <div id="access" class="tab-1-content-inner ss-2">
             <div>
             </div>
-          </div> <!-- fin del div en blanco -->
+          </div>
+          <!-- fin del div en blanco -->
+          <div class="slider" id="main-slider"><!-- outermost container element -->
+            <p class="text-lg text-ts text-center"><q>Atravez de Pequenas Incisiones <br />Realisamos Grandes Cirugias</q><p>
+          	<div class="slider-wrapper"><!-- innermost wrapper element -->
+          		<img src="/Users/admin/FrontendProjects/Netflix_clone/assets/pp1.png" alt="First" class="slide" /><!-- slides -->
+          		<img src="/Users/admin/FrontendProjects/Netflix_clone/assets/pp2.png" alt="Second" class="slide" />
+          		<img src="/Users/admin/FrontendProjects/Netflix_clone/assets/pp3.png" alt="Third" class="slide" />
+          	</div>
+          </div>
+          <div>
+           <button href="#" class="button button1 text-lg">Contactanos al: (+507) 6704-1694</button>
+          </div>
+          <script>
+          (function() {
+          	function Slideshow( element ) {
+          		this.el = document.querySelector( element );
+          		this.init();
+          	}
+          	Slideshow.prototype = {
+          		init: function() {
+          			this.wrapper = this.el.querySelector( ".slider-wrapper" );
+          			this.slides = this.el.querySelectorAll( ".slide" );
+          			this.previous = this.el.querySelector( ".slider-previous" );
+          			this.next = this.el.querySelector( ".slider-next" );
+          			this.index = 0;
+          			this.total = this.slides.length;
+          			this.timer = null;
+          			this.action();
+          			this.stopStart();
+          		},
+          		_slideTo: function( slide ) {
+          			var currentSlide = this.slides[slide];
+          			currentSlide.style.opacity = 1;
+          			for( var i = 0; i < this.slides.length; i++ ) {
+          				var slide = this.slides[i];
+          				if( slide !== currentSlide ) {
+          					slide.style.opacity = 0;
+          				}
+          			}
+          		},
+          		action: function() {
+          			var self = this;
+          			self.timer = setInterval(function() {
+          				self.index++;
+          				if( self.index == self.slides.length ) {
+          					self.index = 0;
+          				}
+          				self._slideTo( self.index );
+          			}, 5000);
+          		},
+          		stopStart: function() {
+          			var self = this;
+          			self.el.addEventListener( "mouseover", function() {
+          				clearInterval( self.timer );
+          				self.timer = null;
+          			}, false);
+          			self.el.addEventListener( "mouseout", function() {
+          				self.action();
+          			}, false);
+          		}
+          	};
+          	document.addEventListener( "DOMContentLoaded", function() {
+          		var slider = new Slideshow( "#main-slider" );
+          	});
+          })();
+          </script>
+        </section>
+          <!-- 111111111111 -->								
+	  <!---------------------------------------------------------------------------------------->
           <div id="access" class="tab-1-content-inner ss-3">
             <!-- sub seccion 3-->
             <div>
