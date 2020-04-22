@@ -56,6 +56,44 @@ img {
 	width: 98%; /*--deja un espacio en el top de 2%--*/
 }
 
+/*----- seccion 7 --------*/
+/* VIDEO Background Section */
+.callout {
+    	position: relative;
+    	overflow: hidden;
+	margin: 20px 20px 20px 20px;
+	min-width=300px:
+}
+
+ /* Style of the the video */
+#myVideo {
+	height: auto;
+	width: auto;
+  	vertical-align: middle;
+  	width: 50%;
+  	height: 20%;
+	/*border: 1px solid slategrey;
+	border-radius: 5px;*/
+  	display:inline-block;
+  	overflow: hidden;
+  	z-index: -1000;
+}
+
+/* some content over the video */
+.convid {
+    	position: absolute;
+    	bottom: 0;
+    	/*background: rgba(0, 0, 0, 0.25);*/
+    	color: #f1f1f1;
+    	width: 100%;
+	height: 100%;
+  	vertical-align: middle;
+ 	text-align:center;
+  	align-items: center;
+  	justify-content: center;
+	text-shadow: 0px 0px 3px #272D0B;
+}
+
 /*----- MI clase de imagen ----*/
 .img-a{
 	max-width: 100%;
