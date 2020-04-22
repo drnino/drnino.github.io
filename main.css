@@ -428,7 +428,8 @@ img {
 
 /* Container */
 .container {
-	max-width: 70%;
+	/* Original--> max-width: 70%; */
+	max-width: 90%;
 	margin: auto;
 	overflow: hidden;
 	padding: 0 2rem;
