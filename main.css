@@ -940,7 +940,7 @@ float: left;
 	position: absolute;
 	bottom: 100px;
 	left: 20px;
-	font-size: 4em;
+	font-size: 3.5em;
 	line-height: 1em;
 }
 
@@ -949,7 +949,7 @@ float: left;
 	bottom: 20px;
 	left: 20px;
 	Color: white;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	padding-top: 5px;
 	font-weight: 700;
 	border-top-left-radius: 1px solid #262626;
