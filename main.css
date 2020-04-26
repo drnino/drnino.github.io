@@ -694,6 +694,21 @@ img {
 		grid-gap: 2rem;
 		text-align: center;
 	}
+	
+	/*nuevos*/
+	.tab-content-topV {
+		display: block;
+		text-align: center;
+	}
+
+	.tab-content-bottomV {
+		margin-top: 2rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+		text-align: center;
+	}
+	/*Fin de nuevos*/
 
 	.btn-xl {
 		font-size: 1rem;
