@@ -13,7 +13,12 @@
     <link rel="stylesheet" href="/main.css" />
     <!-- Latest compiled and minified Bootstrap CSS -->	  
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="/Users/admin/FrontendProjects/Netflix_clone/swiper.min.css">
     
+    <!--titulo-->
     <title>Dr. Saturnino Dominguez C.</title>
 	  
     <!-- this is the code that will allow the icon to be visible in the title bar of the browser -->
@@ -313,6 +318,53 @@
     		</div>
               <!-- fin de la seccion Isometrica 2 -->
 <!----------------------------------------------------------------------------->
+<!-- universidades------------------------------------------------------>
+<section id="cartas">
+  <p> <span class="text-lg text-ts">Formacion de Primer Nivel:</span><br/>
+    <span class="text-md">Un Cirujano Formado en las mejores universidades<br/>
+    y centros de Exelencia Nacionales</br>
+    Internacioanles</span><br/>
+    <br/>
+    <br/>
+    <br/>
+    <a href="#" class="btn btn-lg">Conoce al Dr. Dominguez</a>
+  </p>
+  <div class="swiper-container">
+   <div class="swiper-wrapper">
+     <div class="swiper-slide" style="background-image: url(/Users/admin/FrontendProjects/Netflix_clone/assets/Rhms.jpeg);">
+        <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Harvard Medical School</div>
+          <div class="subtitle" data-swiper-parallax="-200">DEVELOPING ESSENTIALS SKILLS IN CLINICAL RESEARCH</div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(/Users/admin/FrontendProjects/Netflix_clone/assets/Rhsjda.jpg);">
+             <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Valencia, Espana</div>
+               <div class="subtitle" data-swiper-parallax="-200">Maestia en Cirugia Laparoscopica Avanzada y Minimamente Invasiva</div>
+          </div>
+          <div class="swiper-slide" style="background-image: url(/Users/admin/FrontendProjects/Netflix_clone/assets/Rhaba.jpg);">
+                  <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Hospital Aleman de Buenos Aires</div>
+                  <div class="subtitle" data-swiper-parallax="-200">Rotacion en Cirgua Cardiovascular y Cirugia Hepatobiliar y Transplante</div>
+          </div>
+          <div class="swiper-slide" style="background-image: url(/Users/admin/FrontendProjects/Netflix_clone/assets/Rhscisp.jpg);">
+                  <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Hospital de la Santa Creu i Sant Pau</div>
+                  <div class="subtitle" data-swiper-parallax="-200">Rotacion en Cirugia Hepatobiliar y Transplante</div>
+          </div>
+          <div class="swiper-slide" style="background-image: url(/Users/admin/FrontendProjects/Netflix_clone/assets/Rwimat.jpg);">
+                  <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Hospital Central de Gales, Reino Unido</div>
+                  <div class="subtitle" data-swiper-parallax="-200">Centro de Cirugia Minimamente Invasiva de Gales:<br>Tecnicas Laparoscopicas Avanzadas</div>
+          </div>
+          <div class="swiper-slide" style="background-image: url(/Users/admin/FrontendProjects/Netflix_clone/assets/Rhst.jpg);">
+                  <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Hospital Santo Tomas</div>
+                  <div class="subtitle" data-swiper-parallax="-200">Maestria en Ciencias Clinicas (Universidad de Panama) <br> Especialidad en Cirugia General y del Aparato Digestivo</div>
+          </div>
+   </div>
+   <!-- Add Pagination -->
+   <div class="swiper-pagination"></div>
+   <!-- Add Arrows -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+ </div>
+</section>
+<!----------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
 	   <!-- 000000000000 -->
           <section>
           <!-- div en blanco -->
@@ -322,7 +374,8 @@
           </div>
           <!-- fin del div en blanco -->
           <div class="slider" id="main-slider"><!-- outermost container element -->
-            <p class="text-lg text-ts text-center"><q>Atravez de Pequenas Incisiones <br />Realisamos Grandes Cirugias</q><p>
+	    <p class="text-lg text-ts text-center">Que es la Cirugia Minimamente Invasiva?
+            <p class="text-md text-ts text-center"><q>Es realizar Grandes Cirugias<br />Atravez de Pequenas Incisiones</q><p>
           	<div class="slider-wrapper"><!-- innermost wrapper element -->
           		<img src="../assets/cx1.png" alt="First" class="slide" /><!-- slides -->
           		<img src="../assets/cx2.png" alt="Second" class="slide" />
@@ -420,13 +473,14 @@
           <!-- div en blanco -->
           <div id="access" class="ss-4">
           </div>
-          <!-- fin del div en <b></b>lanco -->
+          <!-- fin del div en blanco -->
           <div id="access" class="tab-1-content-inner ss-2">
             <!-- book-->
             <section class="bgk">
               <div class="book">
                 <div class="cover">
-                  <h2 style="color:red;">Cirugia <span>Avanzada</span></h2>
+                  <p class="sup" style="color:green;">Deep Learning, Redes Neurales y Otros Avances</p>
+                  <h2 style="color:#66FF66; background-color:rgba(0,0,0,0.4)">Cirugia <span>e Inteligencia Artificial</span></h2>
                   <span class="writer"><i>Dr. Saturnino Dominguez</i></span>
                 </div>
               </div>
@@ -434,8 +488,9 @@
             <!-- fin de book -->
             <div class="txt2">
               <div>
-                <p class="text-lg text-center text-ts" style="font-weight:1100;"> Ultimas Tecnicas Quirurgicas para darte los mejores resultados </p>
-                <button href="#" class="button button1 text-lg">Reserva tu cita llamando al: (+507) 6704-1694</button>
+                <p class="text-lg text-center text-ts" style="font-weight:1100;"> Cirujano, Autor e Investigador </p>
+                <p class="text-lg text-center text-ts" style="font-weight:1100;">Libro publicado por el Dr. Domignuez sobre el uso de Avances Tecnologicos e inteligencia artificial en la Cirugia Actual</p>
+                <button href="#" class="button button1 text-lg">Ver Libro</button>
               </div>
             </div>
           </div>
@@ -904,5 +959,41 @@
     -->
     <!----------------------------------------------->
     <script src="/main.js"></script>
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="/Users/admin/FrontendProjects/Netflix_clone/swiper.min.js"></script>
+    <script>
+          var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            speed: 600,
+            parallax: true,
+            grabCursor: true,
+            cssMode: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            autoplay: {
+                  delay: 9000,
+                  disableOnInteraction: false,
+                },
+            coverflowEffect: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows : true,
+            },
+            pagination: {
+              el: '.swiper-pagination',
+            },
+            navigation: {
+               nextEl: '.swiper-button-next',
+               prevEl: '.swiper-button-prev',
+             },
+             mousewheel: true,
+             keyboard: true,
+          });
+    </script>
+    <!-- fin swiper-->
   </body>
 </html>
