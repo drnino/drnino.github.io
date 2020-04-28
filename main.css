@@ -52,6 +52,14 @@ p {
 	margin: 0.5rem 0;
 }
 
+tit {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 900;
+	font-size: 2.4rem;
+	line-height: 1.25;
+}
+
 img {
 	width: 98%; /*--deja un espacio en el top de 2%--*/
 }
