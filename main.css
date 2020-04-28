@@ -770,6 +770,10 @@ img {
 		transform: translate(-50%, -50%);
 		margin-left: 0;
 	}
+	
+	.showcase-content {
+	margin-top: 4rem; /*--distancia del logo hacia abajo*/
+	}
 
 	.showcase-content h1 {
 		font-size: 3.7rem;
@@ -810,6 +814,10 @@ img {
 	
 	.tx-2{
 		 font-size: 0.75em;
+	}
+	
+	.tit {
+		font-size: 1.5rem;
 	}
 }
 
