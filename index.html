@@ -16,7 +16,7 @@
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="/Users/admin/FrontendProjects/Netflix_clone/swiper.min.css">
+    <link rel="stylesheet" href="/swiper.min.css">
     
     <!--titulo-->
     <title>Dr. Saturnino Dominguez C.</title>
@@ -157,12 +157,46 @@
   </head>
 
   <body>
+<!----------------------------------------------------------->
+<!------------------ Nav bar ------------------>
+<section class="headerX">
+        <a href="#" class="site-logo hide-sm" aria-label="homepage">
+          Dr. Saturnino Dominguez C.
+        </a>
+        <nav class="main-nav">
+          <ul class="nav__list">
+            <li id="tab-1" class="nav__list-item tab-item">
+              <i class="fas fa-door-open fa-2x"></i>
+              <a href="#" class="nav__link">Informacion</a></li>
+            <li  id="tab-2" class="nav__list-item tab-item ">
+              <i class="fas fa-tablet-alt fa-2x"></i>
+              <a href="#" class="nav__link">Procedimientos</a>
+            </li>
+            <li id="tab-3" class="nav__list-item tab-item ">
+              <i class="fas fa-tags fa-2x"></i>
+              <a href="#" class="nav__link">Precios</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="account hide-sm">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__link nav__link--btn" href="#"><i class="fas fa-phone-alt fa-1x"></i>    (+507)6704-1694</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link nav__link--btn nav__link--btn--highlight" href="#">Contactanos</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+<!------------- Fin de Navbar ----------------------->
+<!----------------------------------------------------------->
     <!-- inicio de header -->
     <header class="showcase">
     <div class="progress-bar" id="myBar"></div>
 			<div class="showcase-top">
 				<img src="/assets/logo-white.png" alt="logo"/>
-				<a href="https://wa.me/50767041694" class="btn btn-rounded">Hacer una Cita</a>
+				<!-- <a href="https://wa.me/50767041694" class="btn btn-rounded">Hacer una Cita</a>-->
 			</div>
 			<div class="showcase-content">
 			 <div class-"container">
@@ -224,9 +258,9 @@
 			</div>
 		</header>
     <!-- FIN de header -->
-
+<!------------------------------------------------------------>
     <!-- inicio de la primera seccion -->
-		<section class="tabs">
+		<section class="tabs home-intro hide-sm">
 			<div class="container">
 				<div id="tab-1" class="tab-item tab-border">
 					<i class="fas fa-door-open fa-3x"></i>
@@ -243,7 +277,7 @@
 			</div>
 		</section>
     <!-- FIN de la primera seccion -->
-
+<!------------------------------------------------------------>
 		<section class="tab-content tab-border">
 			<div class="container" >
 				<!-- Tab Content 1 -->
@@ -260,7 +294,7 @@
             <img class="reflect" src="/assets/robo_surg.jpg" alt="" />
 					</div>
 
-          <!----------------------------------------------------------------->
+<!----------------------------------------------------------------->
           <!-- nuevas secciones agregadas por mi -->
           <div id="access" class="tab-1-content-inner ss-2"> <!-- div en blanco -->
             <div>
@@ -995,5 +1029,7 @@
           });
     </script>
     <!-- fin swiper-->
+    <!-- navbar -->
+    <script src="/iob.js"></script>
   </body>
 </html>
