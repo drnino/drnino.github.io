@@ -64,7 +64,7 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-//Flotating Action Menu Buttons //
+//Flotating Action Menu Buttons
 $(document).ready(function(){
         $('.floatingButton').on('click',
             function(e){
