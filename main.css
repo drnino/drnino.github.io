@@ -52,7 +52,7 @@ p {
 	margin: 0.5rem 0;
 }
 
-tit {
+.tit {
 	text-transform: uppercase;
 	color: #fff;
 	font-weight: 900;
