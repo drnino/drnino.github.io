@@ -2,7 +2,7 @@ const header = document.querySelector(".headerX");
 const sectionOne = document.querySelector(".home-intro");
 
 const sectionOneOptions = {
-  rootMargin: "-200px 0px 0px 0px"
+  rootMargin: "-10px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(
