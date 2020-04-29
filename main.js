@@ -74,8 +74,8 @@ $(document).ready(function(){
                 {
                     $(this).children('.fa').removeClass('fa-plus');
                     $(this).children('.fa').addClass('fa-close');
-                }
-                else if ($(this).children('.fa').hasClass('fa-close'))
+                } 
+                else if ($(this).children('.fa').hasClass('fa-close')) 
                 {
                     $(this).children('.fa').removeClass('fa-close');
                     $(this).children('.fa').addClass('fa-plus');
@@ -87,13 +87,13 @@ $(document).ready(function(){
             var container = $(".floatingButton");
 
             // if the target of the click isn't the container nor a descendant of the container
-            if (!container.is(e.target) && $('.floatingButtonWrap').has(e.target).length === 0)
+            if (!container.is(e.target) && $('.floatingButtonWrap').has(e.target).length === 0) 
             {
                 if(container.hasClass('open'))
                 {
                     container.removeClass('open');
                 }
-                if (container.children('.fa').hasClass('fa-close'))
+                if (container.children('.fa').hasClass('fa-close')) 
                 {
                     container.children('.fa').removeClass('fa-close');
                     container.children('.fa').addClass('fa-plus');
