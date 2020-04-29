@@ -408,6 +408,40 @@
    <!-- Add Arrows -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
+  <script>
+	  $(document).ready(function () {
+          //initialize swiper when document ready
+          var mySwiper = new Swiper ('.swiper-container', {
+            effect: 'coverflow',
+            speed: 600,
+            parallax: true,
+            grabCursor: true,
+            cssMode: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            autoplay: {
+                  delay: 9000,
+                  disableOnInteraction: false,
+                },
+            coverflowEffect: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows : true,
+            },
+            pagination: {
+              el: '.swiper-pagination',
+            },
+            navigation: {
+               nextEl: '.swiper-button-next',
+               prevEl: '.swiper-button-prev',
+             },
+             mousewheel: false,
+             keyboard: true,
+          })
+        });
+    </script>
  </div>
 </section>
 <!----------------------------------------------------------------->
@@ -1026,37 +1060,6 @@
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="/Users/admin/FrontendProjects/Netflix_clone/swiper.min.js"></script>
-    <script>
-          var swiper = new Swiper('.swiper-container', {
-            effect: 'coverflow',
-            speed: 600,
-            parallax: true,
-            grabCursor: true,
-            cssMode: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            autoplay: {
-                  delay: 9000,
-                  disableOnInteraction: false,
-                },
-            coverflowEffect: {
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows : true,
-            },
-            pagination: {
-              el: '.swiper-pagination',
-            },
-            navigation: {
-               nextEl: '.swiper-button-next',
-               prevEl: '.swiper-button-prev',
-             },
-             mousewheel: true,
-             keyboard: true,
-          });
-    </script>
     <!-- fin swiper-->
     <!-- inicio de 20:20 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
