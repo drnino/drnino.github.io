@@ -927,6 +927,11 @@ img {
 	.tit {
 		font-size: 1.5rem;
 	}
+	
+		.tituloS {
+		font-size: 3em;
+		font-weight: 900;
+	}
 }
 
 @media (max-width: 700px) {
