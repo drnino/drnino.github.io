@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="/swiper.min.css">
     <!-- 20:20 -->
     <link rel="stylesheet" href="/twentytwenty.css" type="text/css" media="screen"/>
+    <!-- Modal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <!-- MAIN -->
      <script src="https://kit.fontawesome.com/83b798641d.js" crossorigin="anonymous"></script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -270,7 +272,7 @@
 <!------------------------------------------------------------>
 <!------------------------------------------------------------>
     <!-- inicio de la primera seccion -->
-		<section class="tabs hide-sm">
+		<section class="tabs hide-sm hide-bg">
 			<div class="container">
 				<div id="tab-1" class="tab-item tab-border">
 					<i class="fas fa-door-open fa-3x"></i>
@@ -297,6 +299,7 @@
 			<div class="container" >
 				<!-- Tab Content 1 -->
 				<div id="tab-1-content" class="tab-content-item show">
+					<p class="tituloS"> Bienvenidos </p>
 					<div class="tab-1-content-inner"> <!-- crea un grid que contiene 2 elementos-->
 						<div>
 							<p class="text-lg text-ts">
@@ -842,31 +845,45 @@
 <!----------------------------------------------------------------->
 	 </div>
 <!-----------------------FIN DE TAB 1------------------------------------------>
-
+<!--************************************************************************************-->
+<!--************************************************************************************-->
+<!--************************************************************************************-->
+<!--************************************************************************************-->
+<!--************************************************************************************-->
 <!-- Tab Content 2 -->
 				<div id="tab-2-content" class="tab-content-item">
+					<p class="tab-2-content-top tituloS"> Procedimientos </p>
 					<div class="tab-2-content-top">
 						<p class="text-lg">
 							Para conocer mas sobre las enfermedades que tratamos o
-              los procedimientos que realizamos llama o escribe:
+              los procedimientos que realizamos, llama o escribe al:
 						</p>
 						<a href="#" class="btn btn-lg">(+507) 6704-1694</a>
 					</div>
           <!-- fin de la primera div -->
 					<div class="tab-2-content-bottom">
+						<!-- Higado -->
 						<div>
-							<img src="/assets/higado.png" alt="" class="img-a"/>
-							<p class="text-md">
-								Cirugia de Higado, Vesicula y Via Biliar
-							</p>
-							<p class="text-dark">
-								Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
-								players and more.
-							</p>
-              <a href="#" class="btn btn-primary btn-lg active" role="button">Saber Mas</a>
-						</div>
+							<img src="../assets/higado.png" alt="" class="img-a"/>
+                      <p class="text-md">
+                      Cirugia de Higado, Vesicula y Via Biliar
+                    </p>
+                    <p class="text-dark">
+                      Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+                      players and more.
+                    </p>
+                          <!-- Modal HTML embedded directly into document -->
+                          <div id="ex1" class="modal">
+                            <p>Hepatectomia Laparoscopica y Abierta</p>
+                            <a href="#" rel="modal:close">Cerrar</a>
+                          </div>
+                          <!-- Link to open the modal -->
+                          <p><a href="#ex1" rel="modal:open" class="btn btn-primary btn-lg active">Saber Mas</a></p>
+                      </div>
+          <!-- fin de Higado -->
+          <!-- Pancreas -->
 						<div>
-							<img src="/assets/higado.png" alt="" class="img-a"/>
+							<img src="../assets/higado.png" alt="" class="img-a"/>
 							<p class="text-md">
 								Cirugia de Panceas y Bazo
 							</p>
@@ -874,10 +891,18 @@
                 Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
                 players and more.
 							</p>
-              <a href="#" class="btn btn-primary btn-lg active" role="button">Saber Mas</a>
-						</div>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="ex1" class="modal">
+                <p>Hepatectomia Laparoscopica y Abierta</p>
+                <a href="#" rel="modal:close">Cerrar</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex1" rel="modal:open" class="btn btn-primary btn-lg active">Saber Mas</a></p>
+            </div>
+            <!-- fin Pancreas -->
+            <!-- apendice -->
 						<div>
-							<img src="/assets/apendice.jpg" alt="" class="img-a"/>
+							<img src="../assets/apendice.jpg" alt="" class="img-a"/>
 							<p class="text-md">
 								Cirugia de Apendice y colon
 							</p>
@@ -885,13 +910,21 @@
                 Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
                 players and more.
 							</p>
-              <a href="#" class="btn btn-primary btn-lg active" role="button">Saber Mas</a>
-						</div>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="ex1" class="modal">
+                <p>Hepatectomia Laparoscopica y Abierta</p>
+                <a href="#" rel="modal:close">Cerrar</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex1" rel="modal:open" class="btn btn-primary btn-lg active">Saber Mas</a></p>
+            </div>
 					</div>
+          <!-- fin apendice -->
+          <!-- tiroides -->
           <!-- nuevas divs 2-->
           <div class="tab-2-content-bottom">
 						<div>
-							<img src="/assets/tiroides.jpg" alt="" class="img-a"/>
+							<img src="../assets/tiroides.jpg" alt="" class="img-a"/>
 							<p class="text-md">
 								Cirugia de Tiroides, Paratiroides y Parotidas
 							</p>
@@ -899,10 +932,18 @@
 								Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
 								players and more.
 							</p>
-              <a href="#" class="btn btn-primary btn-lg active" role="button">Saber Mas</a>
-						</div>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="ex1" class="modal">
+                <p>Hepatectomia Laparoscopica y Abierta</p>
+                <a href="#" rel="modal:close">Cerrar</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex1" rel="modal:open" class="btn btn-primary btn-lg active">Saber Mas</a></p>
+            </div>
+            <!-- fin tiroides -->
+            <!-- hernias -->
 						<div>
-							<img src="/assets/hernias.png" alt="" class="img-a"/>
+							<img src="../assets/hernias.png" alt="" class="img-a"/>
 							<p class="text-md">
 								Cirugia de Hernias
 							</p>
@@ -910,10 +951,18 @@
                 Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
                 players and more.
 							</p>
-              <a href="#" class="btn btn-primary btn-lg active" role="button">Saber Mas</a>
-						</div>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="ex1" class="modal">
+                <p>Hepatectomia Laparoscopica y Abierta</p>
+                <a href="#" rel="modal:close">Cerrar</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex1" rel="modal:open" class="btn btn-primary btn-lg active">Saber Mas</a></p>
+          </div>
+            <!-- fin hernias -->
+            <!-- menor -->
 						<div>
-							<img src="/assets/higado.png" alt="" class="img-a"/>
+							<img src="../assets/higado.png" alt="" class="img-a"/>
 							<p class="text-md">
 								Cirugia Menor, Accesos Vasculares y Suturas
 							</p>
@@ -921,13 +970,21 @@
                 Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
                 players and more.
 							</p>
-              <a href="#" class="btn btn-primary btn-lg active" role="button">Saber Mas</a>
-						</div>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="ex1" class="modal">
+                <p>Hepatectomia Laparoscopica y Abierta</p>
+                <a href="#" rel="modal:close">Cerrar</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex1" rel="modal:open" class="btn btn-primary btn-lg active">Saber Mas</a></p>
+            </div>
 					</div>
+          <!-- fin menor -->
           <!-- nuevas divs 3-->
           <div class="tab-2-content-bottom">
+          <!-- mama -->
             <div>
-              <img src="/assets/mama.jpg" alt="" class="img-a"/>
+              <img src="../assets/mama.jpg" alt="" class="img-a"/>
               <p class="text-md">
                 Cirugia de Mama
               </p>
@@ -935,10 +992,18 @@
                 Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
                 players and more.
               </p>
-              <a href="#" class="btn btn-primary btn-lg active" role="button">Saber Mas</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="ex1" class="modal">
+                <p>Hepatectomia Laparoscopica y Abierta</p>
+                <a href="#" rel="modal:close">Cerrar</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex1" rel="modal:open" class="btn btn-primary btn-lg active">Saber Mas</a></p>
             </div>
+          <!-- fin mama -->
+          <!-- estomago -->
             <div>
-              <img src="/assets/Estomago.jpg" alt="" class="img-a"/>
+              <img src="../assets/Estomago.jpg" alt="" class="img-a"/>
               <p class="text-md">
                 Cirugia de Esofago y Estomago
               </p>
@@ -946,10 +1011,18 @@
                 Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
                 players and more.
               </p>
-              <a href="#" class="btn btn-primary btn-lg active" role="button">Saber Mas</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="ex1" class="modal">
+                <p>Hepatectomia Laparoscopica y Abierta</p>
+                <a href="#" rel="modal:close">Cerrar</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex1" rel="modal:open" class="btn btn-primary btn-lg active">Saber Mas</a></p>
             </div>
+            <!-- fin estomago -->
+            <!-- pie -->
             <div>
-              <img src="/assets/pie.jpg" alt="" class="img-a"/>
+              <img src="../assets/pie.jpg" alt="" class="img-a"/>
               <p class="text-md">
                 Cirugia y Manejo de Pie Diabetico
               </p>
@@ -957,10 +1030,23 @@
                 Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
                 players and more.
               </p>
-              <a href="#" class="btn btn-primary btn-lg active" role="button">Saber Mas</a>
+              <!-- Modal HTML embedded directly into document -->
+              <div id="ex1" class="modal">
+                <p>Hepatectomia Laparoscopica y Abierta</p>
+                <a href="#" rel="modal:close">Cerrar</a>
+              </div>
+              <!-- Link to open the modal -->
+              <p><a href="#ex1" rel="modal:open" class="btn btn-primary btn-lg active">Saber Mas</a></p>
             </div>
           </div>
 				</div>
+          <!-- fin pie -->
+<!-------------------fin de seccion 2 ----------------------------------------------->
+<!--************************************************************************************-->
+<!--************************************************************************************-->
+<!--************************************************************************************-->
+<!--************************************************************************************-->
+<!--************************************************************************************-->
 
 		<!-- Tab Content 3 -->
 				<div id="tab-3-content" class="tab-content-item">
@@ -975,6 +1061,7 @@
 	  <!-------------------------------------------->
           <!-- div en blanco -->
           <div id="tab-3-content" class="tab-content-item">
+	  <p class="tituloS"> Precios & Cotizaciones</p>
             <div>
               <br>
               <br>
@@ -1104,6 +1191,9 @@
     <!-- FIN de FOOTER -->
     <!----------------------------------------------->
     <!----------------------------------------------->
+    <!--JQuery + Modal-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <!-- swiper js -->
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
